@@ -1,0 +1,21 @@
+.sign__up {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 2px solid #3471eb;
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: auto;
+}
+
+.sign__up h2 {
+    margin-bottom: 2rem;
+}
+
+.error__sms{
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+

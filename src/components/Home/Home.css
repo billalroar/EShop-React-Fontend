@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+.list__nav{
+  cursor: context-menu;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 20px #e1e5ee;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+
+.card__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  padding: 1rem;
+  text-align: center;
+  background-color: lightcoral;
+  height: 80px;
+  vertical-align: middle;
+}
+
+.card__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 1rem;
+  border: 2px solid #d50000;
+  background: transparent;
+  color: #d50000;
+  border-radius: 0.2rem;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card:hover button {
+  background: #3471eb;
+  color: white;
+  border: 2px solid #3471eb;
+}
+
+.flex-column {
+  background-color: lightgray;
+  border: 2px solid #d50000;
+  margin-left: 1rem;
+}
+.cart__footer {
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-around;
+}
+.cart__footer h5 {
+  text-align: center;
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  border: 1px solid #2b2eff;
+  color: #2b2eff;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #2b2eff;
+}
+
+.paginationDisabled a {
+  visibility: hidden;
+}
